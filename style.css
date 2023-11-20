@@ -1,0 +1,124 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: large;
+  padding: 0;
+}
+* body {
+  background: linear-gradient(to right, #333, rgb(75, 72, 245));
+}
+* header {
+  color: white;
+  background: linear-gradient(to right, #333, rgb(75, 72, 245));
+  text-align: center;
+}
+* header h1 {
+  font-size: 3em;
+}
+* header #headerSpan {
+  font-size: 2em;
+}
+* header .theme {
+  position: relative;
+}
+* .todoFrame {
+  background-color: rgb(197, 219, 238);
+  height: 35em;
+  width: 50%;
+  border: 2px solid rgb(197, 219, 238);
+  margin: auto;
+  padding: 20px; /* Dodatni padding za unutar okvira */
+  overflow: auto;
+}
+* .todoFrame .valueFrame {
+  border: 1px solid black;
+  background-color: aliceblue;
+  max-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+* .todoFrame .valueFrame #userInput {
+  background-color: white;
+  border: 5px solid rgb(247, 247, 243);
+  flex-basis: 80%;
+}
+* .todoFrame .valueFrame button {
+  flex-grow: 5;
+  flex-shrink: 5;
+}
+* .todoFrame .valueFrame button:hover {
+  background-color: aliceblue;
+}
+* div {
+  background-color: rgb(245, 237, 237);
+  border: 2px solid #0f0000;
+  position: relative;
+  border: 1px solid black;
+  margin: 5px;
+  background-color: rgb(193, 176, 238);
+  color: white;
+}
+* div h1 {
+  color: black;
+}
+* div .exitSpan {
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+  opacity: 0.1;
+  transition: 0.5s;
+  justify-content: center;
+  background-color: blue;
+}
+* div .exitSpan:hover {
+  background-color: red;
+  color: white;
+  opacity: 10;
+  z-index: 2;
+}
+
+.addedTask {
+  padding: 5px;
+  padding-left: 10px;
+  word-wrap: break-word;
+}
+
+.exitSpan {
+  text-align: center;
+  padding: 5px;
+}
+
+a {
+  color: #faf8f8;
+}
+
+@media (max-width: 870px) {
+  .todoFrame {
+    background-color: rgb(197, 219, 238);
+    min-height: 35em;
+    max-width: 50%;
+    border: 2px solid rgb(197, 219, 238);
+    margin: auto; /* Margine su postavljene na "auto" */
+    padding: 20px; /* Dodatni padding za unutar okvira */
+    overflow: auto;
+  }
+  .todoFrame .valueFrame {
+    border: 1px solid black;
+    background-color: aliceblue;
+  }
+  .todoFrame .valueFrame #userInput {
+    background-color: white;
+    border: 5px solid rgb(247, 247, 243);
+    min-width: 100%;
+  }
+  .todoFrame .valueFrame button {
+    color: rgb(62, 247, 6);
+    min-width: 100%;
+    flex-grow: 5;
+    flex-shrink: 5;
+  }
+  .todoFrame .valueFrame button:hover {
+    background-color: orange;
+  }
+}/*# sourceMappingURL=style.css.map */

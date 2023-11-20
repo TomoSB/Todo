@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo list</title>
+  <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header>
+    <h1>Task tracker</h1>
+     <span id = "headerSpan"></span>
+    </header>
+    <br />
+    <div class="todoFrame">
+      <div class="valueFrame">
+        <input type="text" id="userInput" placeholder="Enter your task" />
+        <button onclick="newTask()" id="theme">Add task</button>
+      </div>
+      <h1>Your Tasks:</h1>
+      <ul class="list">
+        
+      </ul>
+    </div>
+
+    
+    <br />
+   <footer>
+      <a href="https://acme.example.com/terms">Terms of Use</a> |
+      <a href="https://acme.example.com/terms">Privacy Policy</a> |
+    <a onclick="share()"  target="_blank" href ="https://64f847c2824680fd217f5bd2.mockapi.io/task">Post on server</a>
+      </br>
+      Copyright &copy; <span id="year"></span> Acme Corporation.
+      
+  </footer>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>
